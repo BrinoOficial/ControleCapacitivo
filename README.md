@@ -1,7 +1,7 @@
 # ControleCapacitivo
 Um controle capacitivo para o retropie utilizando o estilo do gameboy color. De modo geral, o Arduino é usado como um joystick que pode ser conectado ao computador por meio de sua porta USB. No caso, foi usado um emulador de GameBoy Color para jogar o título "Super Mario Bros". O mesmo projeto pode ser usado para outros jogos, tomando cuidado apenas para emular os controles corretos.
 
-## Quer saber como montar o projeto? Confira agora mesmo [wiki](https://github.com/BrinoOficial/ControleCapacitivo/wiki)!
+## Quer saber como montar o projeto? Confira agora mesmo a [wiki](https://github.com/BrinoOficial/ControleCapacitivo/wiki)!
 
 ## Versão
 Desenvolvido no Ubuntu 16.04 LTS 64Bits
