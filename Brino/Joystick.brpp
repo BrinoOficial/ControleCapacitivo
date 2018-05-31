@@ -1,0 +1,44 @@
+#include "UnoJoy.h"
+usar CapacitiveSensor
+Constante Numero resolution = 10;
+Constante NumeroLongo sensitivity = 1000;
+CapacitiveSensor cs[] = {
+  CapacitiveSensor(8, 2),
+  CapacitiveSensor(8, 3),
+  CapacitiveSensor(8, 4),
+  CapacitiveSensor(8, 5), 
+  CapacitiveSensor(8, 6),
+  CapacitiveSensor(8, 7),
+};
+Constante Numero NUMERO_DE_SENSORES = 6;
+
+Configuracao(){
+  para (Numero i = 0; i++; i < NUMERO_DE_SENSORES)
+    cs[i].set_CS_AutocaL_Millis(0xFFFFFFFF);
+  setupUnoJoy();// Inicializa as funções do UnoJoy
+  Pino.definirModo(11, INPUT_PULLUP);
+  Pino.definirModo(10, INPUT_PULLUP);
+}
+
+Principal(){
+  // Sempre fica atualizando o dado a ser enviado ao computador
+  dataForController_t controllerData = getControllerData();
+  setControllerData(controllerData);
+}
+
+dataForController_t getControllerData(void){  
+  //  Configura local onde dados do controle são armazenados
+  //  Serve para limpar o buffer onde os dados do controle são armazenados
+  dataForController_t controllerData = getBlankDataForController();
+
+  controllerData.dpadDownOn = (cs[0].capacitiveSensor(resolution) > sensitivity);
+  controllerData.dpadLeftOn = (cs[1].capacitiveSensor(resolution) > sensitivity);
+  controllerData.dpadUpOn = (cs[2].capacitiveSensor(resolution) > sensitivity);
+  controllerData.dpadRightOn = (cs[3].capacitiveSensor(resolution) > sensitivity);
+  controllerData.crossOn = (cs[4].capacitiveSensor(resolution) > sensitivity);
+  controllerData.triangleOn = (cs[5].capacitiveSensor(resolution) > sensitivity);
+  controllerData.startOn = !digitalRead(11);
+  controllerData.selectOn = !digitalRead(10);
+
+  responder controllerData;
+}
