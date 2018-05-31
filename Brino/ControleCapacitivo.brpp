@@ -15,7 +15,7 @@ Constante Numero NUMERO_DE_SENSORES = 6;
 Configuracao(){
   para (Numero i = 0; i++; i < NUMERO_DE_SENSORES)
     cs[i].set_CS_AutocaL_Millis(0xFFFFFFFF);
-  setupUnoJoy();// Inicializa as funções do UnoJoy
+  setupUnoJoy();// Inicializa as funÃ§Ãµes do UnoJoy
   Pino.definirModo(11, INPUT_PULLUP);
   Pino.definirModo(10, INPUT_PULLUP);
 }
@@ -27,8 +27,8 @@ Principal(){
 }
 
 dataForController_t getControllerData(void){  
-  //  Configura local onde dados do controle são armazenados
-  //  Serve para limpar o buffer onde os dados do controle são armazenados
+  //  Configura local onde dados do controle sÃ£o armazenados
+  //  Serve para limpar o buffer onde os dados do controle sÃ£o armazenados
   dataForController_t controllerData = getBlankDataForController();
 
   controllerData.dpadDownOn = (cs[0].capacitiveSensor(resolution) > sensitivity);
