@@ -4,7 +4,7 @@ Um controle capacitivo para o retropie utilizando o estilo do gameboy color. De 
 ## Quer saber como montar o projeto? Confira agora mesmo a [wiki](https://github.com/BrinoOficial/ControleCapacitivo/wiki)!
 
 ## Versão
-Desenvolvido no Ubuntu 16.04 LTS 64Bits
+Desenvolvido no Windows 10 64Bits
 * **Brino** - *3.0.1*
 * **Arduino** - *2:1.0.5*
 
