@@ -7,6 +7,7 @@ Um controle capacitivo para o retropie utilizando o estilo do gameboy color. De 
 Desenvolvido no Windows 10 64Bits
 * **Brino** - *3.0.1*
 * **Arduino** - *2:1.0.5*
+* **Flip** - *3.4.7*
 
 ## Autores
 
