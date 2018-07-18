@@ -12,7 +12,7 @@ Desenvolvido no Windows 10 64Bits
 ## Autores
 
 * **Laboratório de Garagem** - *Projeto base* - [Laboratório de Garagem](http://labdegaragem.com/profiles/blogs/tutorial-joystick-shield-arduino-uno-unojoy)
-* **Víctor Rodrigues Pacheco** - *Autor* - [granix3](https://github.com/granix3)
+* **Víctor Rodrigues Pacheco** - *Autor* - [VictorRPacheco](https://github.com/VictorRPacheco)
 * **Gabriel Rodrigues Pacheco** - *Autor* - [GabrielRPacheco](https://github.com/gabrielRPacheco)
 
 
